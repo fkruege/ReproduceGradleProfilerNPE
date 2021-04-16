@@ -1,0 +1,10 @@
+# Scenarios are run in alphabetical order
+# Documentation available here: https://github.com/gradle/gradle-profiler
+
+ci_clean {
+    gradle-args = ["--profile", "--info", "--debug", "--stacktrace", "--scan"]
+    cleanup-tasks = ["clean"]
+    run-using = cli
+    daemon = none
+}
+

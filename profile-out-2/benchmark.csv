@@ -1,0 +1,4 @@
+scenario,ci_clean
+version,Gradle 7.0
+tasks,default tasks
+value,execution

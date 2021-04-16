@@ -1,0 +1,1122 @@
+
+* Started at 2021-04-16T18:20:37.824150Z
+
+* Settings
+Project dir: .
+Output dir: profile-out-2
+Profiler: none
+Benchmark: true
+Versions: []
+Gradle User Home: /Users/fkruege/.gradle
+Targets: [ci_clean]
+
+* Inspecting the build using its default Gradle version
+
+> Task :help
+
+Welcome to Gradle 7.0.
+
+To run a build, run gradle <task> ...
+
+To see a list of available tasks, run gradle tasks
+
+To see a list of command-line options, run gradle --help
+
+To see more detail about a task, run gradle help --task <task>
+
+For troubleshooting, visit https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 8.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/7.0/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed
+
+* Stopping daemons
+Running command /Users/fkruege/.gradle/wrapper/dists/gradle-7.0-all/9m115ut5nwvtxli7nys8pggfr/gradle-7.0/bin/gradle --stop --gradle-user-home /Users/fkruege/.gradle
+Stopping Daemon(s)
+1 Daemon stopped
+
+* Scenarios
+Scenario: ci_clean using Gradle 7.0
+  Gradle 7.0 (/Users/fkruege/.gradle/wrapper/dists/gradle-7.0-all/9m115ut5nwvtxli7nys8pggfr/gradle-7.0)
+  Run using: `gradle` command with --no-daemon
+  Run: run default tasks
+  Cleanup: run tasks clean
+  Gradle args: [--profile, --info, --debug, --stacktrace, --scan]
+  Build changes: []
+  Warm-ups: 1
+  Builds: 10
+
+* Running scenario ci_clean using Gradle 7.0 (scenario 1/1)
+
+* Stopping daemons
+Running command /Users/fkruege/.gradle/wrapper/dists/gradle-7.0-all/9m115ut5nwvtxli7nys8pggfr/gradle-7.0/bin/gradle --stop --gradle-user-home /Users/fkruege/.gradle
+No Gradle daemons are running.
+
+* Build details
+Gradle version: Gradle 7.0
+Java home: /Users/fkruege/.sdkman/candidates/java/11.0.6-zulu
+OS: mac os x x86_64 10.15.7
+JVM args:
+  --add-opens
+  java.base/java.util=ALL-UNNAMED
+  --add-opens
+  java.base/java.lang=ALL-UNNAMED
+  --add-opens
+  java.base/java.lang.invoke=ALL-UNNAMED
+  --add-opens
+  java.base/java.util=ALL-UNNAMED
+  --add-opens
+  java.prefs/java.util.prefs=ALL-UNNAMED
+  --add-opens
+  java.prefs/java.util.prefs=ALL-UNNAMED
+  --add-opens
+  java.base/java.nio.charset=ALL-UNNAMED
+  --add-opens
+  java.base/java.net=ALL-UNNAMED
+  --add-opens
+  java.base/java.util.concurrent.atomic=ALL-UNNAMED
+  -Xmx2048m
+  -Dfile.encoding=UTF-8
+  -Duser.country=US
+  -Duser.language=en
+  -Duser.variant
+  -Dfile.encoding=UTF-8
+  -Dorg.gradle.profiler.scenario=ci_clean
+Gradle args:
+  --gradle-user-home
+  /Users/fkruege/.gradle
+  --profile
+  --info
+  --debug
+  --stacktrace
+  --scan
+  -I
+  /private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle
+
+* Running cleanup for warm-up build #1
+GRADLE_OPTS: "--add-opens" "java.base/java.util=ALL-UNNAMED" "--add-opens" "java.base/java.lang=ALL-UNNAMED" "--add-opens" "java.base/java.lang.invoke=ALL-UNNAMED" "--add-opens" "java.base/java.util=ALL-UNNAMED" "--add-opens" "java.prefs/java.util.prefs=ALL-UNNAMED" "--add-opens" "java.prefs/java.util.prefs=ALL-UNNAMED" "--add-opens" "java.base/java.nio.charset=ALL-UNNAMED" "--add-opens" "java.base/java.net=ALL-UNNAMED" "--add-opens" "java.base/java.util.concurrent.atomic=ALL-UNNAMED" "-Xmx2048m" "-Dfile.encoding=UTF-8" "-Duser.country=US" "-Duser.language=en" "-Duser.variant" "-Dfile.encoding=UTF-8" "-Dorg.gradle.profiler.scenario=ci_clean" "-Dorg.gradle.profiler.phase=WARM_UP" "-Dorg.gradle.profiler.number=1" "-Dorg.gradle.profiler.step=CLEANUP"
+JAVA_HOME: /Users/fkruege/.sdkman/candidates/java/11.0.6-zulu
+Running command /Users/fkruege/.gradle/wrapper/dists/gradle-7.0-all/9m115ut5nwvtxli7nys8pggfr/gradle-7.0/bin/gradle --gradle-user-home /Users/fkruege/.gradle --profile --info --debug --stacktrace --scan -I /private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle clean -Dorg.gradle.daemon=false -Dorg.gradle.jvmargs
+2021-04-16T14:20:44.132-0400 [INFO] [org.gradle.internal.nativeintegration.services.NativeServices] Initialized native services in: /Users/fkruege/.gradle/native
+2021-04-16T14:20:44.210-0400 [LIFECYCLE] [org.gradle.launcher.cli.DebugLoggerWarningAction] 
+#############################################################################
+   WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+
+   Debug level logging will leak security sensitive information!
+
+   https://docs.gradle.org/7.0/userguide/logging.html#sec:debug_security
+#############################################################################
+
+2021-04-16T14:20:44.831-0400 [INFO] [org.gradle.internal.work.DefaultWorkerLeaseService] Using 12 worker leases.
+2021-04-16T14:20:44.952-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for resourceHashesCache, path /Users/fkruege/.gradle/caches/7.0/fileHashes/resourceHashesCache.bin, access org.gradle.cache.internal.DefaultCacheAccess@6ef81f31
+2021-04-16T14:20:44.961-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/7.0/fileHashes/resourceHashesCache.bin (max size: 998900)
+2021-04-16T14:20:44.962-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for file hash cache (/Users/fkruege/.gradle/caches/7.0/fileHashes)
+2021-04-16T14:20:44.975-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun1
+2021-04-16T14:20:44.975-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:e1a0:45a6:11d5:a02f%utun1
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun0
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:736:249f:e391:fa49%utun0
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface en5
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:aede:48ff:fe00:1122%en5
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun2
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fd4a:8b27:f779:0:0:0:0:10f%utun2
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:aede:48ff:fe00:1122%utun2
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /10.92.65.15
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface en8
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:1c24:3724:cb0c:58a0%en8
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.1.29
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo0
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Ignoring remote address on loopback interface /fe80:0:0:0:0:0:0:1%lo0
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo0
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2021-04-16T14:20:44.989-0400 [DEBUG] [org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler] Starting file lock listener thread.
+2021-04-16T14:20:44.990-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on file hash cache (/Users/fkruege/.gradle/caches/7.0/fileHashes).
+2021-04-16T14:20:44.994-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on file hash cache (/Users/fkruege/.gradle/caches/7.0/fileHashes).
+2021-04-16T14:20:45.015-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for fileHashes, path /Users/fkruege/.gradle/caches/7.0/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@6ef81f31
+2021-04-16T14:20:45.015-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/7.0/fileHashes/fileHashes.bin (max size: 998900)
+2021-04-16T14:20:45.097-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for file-access, path /Users/fkruege/.gradle/caches/journal-1/file-access.bin, access org.gradle.cache.internal.DefaultCacheAccess@3701e6e4
+2021-04-16T14:20:45.097-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/journal-1/file-access.bin (max size: 24900)
+2021-04-16T14:20:45.097-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for journal cache (/Users/fkruege/.gradle/caches/journal-1)
+2021-04-16T14:20:45.097-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on journal cache (/Users/fkruege/.gradle/caches/journal-1).
+2021-04-16T14:20:45.098-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on journal cache (/Users/fkruege/.gradle/caches/journal-1).
+2021-04-16T14:20:45.455-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for fileHashes, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@593a6726
+2021-04-16T14:20:45.456-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes/fileHashes.bin (max size: 998900)
+2021-04-16T14:20:45.456-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for file hash cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes)
+2021-04-16T14:20:45.456-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on file hash cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes).
+2021-04-16T14:20:45.456-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on file hash cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes).
+2021-04-16T14:20:45.461-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for resourceHashesCache, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes/resourceHashesCache.bin, access org.gradle.cache.internal.DefaultCacheAccess@593a6726
+2021-04-16T14:20:45.462-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes/resourceHashesCache.bin (max size: 1997800)
+2021-04-16T14:20:45.497-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run build' started
+2021-04-16T14:20:45.500-0400 [INFO] [org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner] Watching the file system is enabled if available
+2021-04-16T14:20:45.502-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build started for file system watching' started
+2021-04-16T14:20:45.511-0400 [INFO] [org.gradle.internal.watch.registry.impl.WatchableHierarchies] Now considering [/Users/fkruege/workspace/ReproduceGradleProfilerNPE] as hierarchies to watch
+2021-04-16T14:20:45.515-0400 [INFO] [org.gradle.internal.watch.registry.impl.HierarchicalFileWatcherUpdater] Not watching anything anymore
+2021-04-16T14:20:45.519-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Build started for file system watching'
+2021-04-16T14:20:45.519-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build started for file system watching' completed
+2021-04-16T14:20:45.527-0400 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1 started (1 worker(s) in use).
+2021-04-16T14:20:45.527-0400 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] main: acquired lock on root.1
+2021-04-16T14:20:45.529-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load build' started
+2021-04-16T14:20:45.531-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run init scripts' started
+2021-04-16T14:20:45.583-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for workingDirs, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/vcsMetadata-1/workingDirs.bin, access org.gradle.cache.internal.DefaultCacheAccess@3127cb44
+2021-04-16T14:20:45.601-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for md5-checksums, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/md5-checksums.bin, access org.gradle.cache.internal.DefaultCacheAccess@40de8f93
+2021-04-16T14:20:45.602-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/md5-checksums.bin (max size: 2400)
+2021-04-16T14:20:45.602-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for checksums cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums)
+2021-04-16T14:20:45.602-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on checksums cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums).
+2021-04-16T14:20:45.602-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on checksums cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums).
+2021-04-16T14:20:45.602-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for sha1-checksums, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha1-checksums.bin, access org.gradle.cache.internal.DefaultCacheAccess@40de8f93
+2021-04-16T14:20:45.603-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha1-checksums.bin (max size: 2400)
+2021-04-16T14:20:45.603-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for sha256-checksums, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha256-checksums.bin, access org.gradle.cache.internal.DefaultCacheAccess@40de8f93
+2021-04-16T14:20:45.603-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha256-checksums.bin (max size: 2400)
+2021-04-16T14:20:45.603-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for sha512-checksums, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha512-checksums.bin, access org.gradle.cache.internal.DefaultCacheAccess@40de8f93
+2021-04-16T14:20:45.603-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha512-checksums.bin (max size: 2400)
+2021-04-16T14:20:45.650-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for md-supplier, path /Users/fkruege/.gradle/caches/7.0/md-supplier/md-supplier.bin, access org.gradle.cache.internal.DefaultCacheAccess@2ed71727
+2021-04-16T14:20:45.651-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/7.0/md-supplier/md-supplier.bin (max size: 4900)
+2021-04-16T14:20:45.651-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for cache directory md-supplier (/Users/fkruege/.gradle/caches/7.0/md-supplier)
+2021-04-16T14:20:45.651-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cache directory md-supplier (/Users/fkruege/.gradle/caches/7.0/md-supplier).
+2021-04-16T14:20:45.652-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cache directory md-supplier (/Users/fkruege/.gradle/caches/7.0/md-supplier).
+2021-04-16T14:20:45.665-0400 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: /Users/fkruege/.m2/repository
+2021-04-16T14:20:45.758-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for md-rule, path /Users/fkruege/.gradle/caches/7.0/md-rule/md-rule.bin, access org.gradle.cache.internal.DefaultCacheAccess@5eabff6b
+2021-04-16T14:20:45.759-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/7.0/md-rule/md-rule.bin (max size: 4900)
+2021-04-16T14:20:45.759-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for cache directory md-rule (/Users/fkruege/.gradle/caches/7.0/md-rule)
+2021-04-16T14:20:45.759-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cache directory md-rule (/Users/fkruege/.gradle/caches/7.0/md-rule).
+2021-04-16T14:20:45.759-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cache directory md-rule (/Users/fkruege/.gradle/caches/7.0/md-rule).
+2021-04-16T14:20:45.828-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for executionHistory, path /Users/fkruege/.gradle/caches/7.0/executionHistory/executionHistory.bin, access org.gradle.cache.internal.DefaultCacheAccess@6b4125ed
+2021-04-16T14:20:45.829-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating cache /Users/fkruege/.gradle/caches/7.0/executionHistory/executionHistory.bin without in-memory store.
+2021-04-16T14:20:45.829-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for execution history cache (/Users/fkruege/.gradle/caches/7.0/executionHistory)
+2021-04-16T14:20:45.829-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on execution history cache (/Users/fkruege/.gradle/caches/7.0/executionHistory).
+2021-04-16T14:20:45.829-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on execution history cache (/Users/fkruege/.gradle/caches/7.0/executionHistory).
+2021-04-16T14:20:45.883-0400 [DEBUG] [org.gradle.internal.locking.LockFileReaderWriter] Lockfiles root: /Users/fkruege/workspace/ReproduceGradleProfilerNPE/gradle/dependency-locks
+2021-04-16T14:20:45.923-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' to build' started
+2021-04-16T14:20:45.939-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:45.939-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:45.940-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:45.940-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:45.941-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:45.943-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Compile initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (CLASSPATH)' started
+2021-04-16T14:20:45.963-0400 [INFO] [org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler] Compiling initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' using SubsetScriptTransformer.
+2021-04-16T14:20:47.040-0400 [DEBUG] [org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler] Timing: Writing script to cache at /Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t/cp_init took: 1.095 secs
+2021-04-16T14:20:47.040-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Compile initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (CLASSPATH)'
+2021-04-16T14:20:47.041-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Compile initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (CLASSPATH)' completed
+2021-04-16T14:20:47.051-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:47.051-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:47.052-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:47.055-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for jars (/Users/fkruege/.gradle/caches/jars-8)
+2021-04-16T14:20:47.056-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on jars (/Users/fkruege/.gradle/caches/jars-8).
+2021-04-16T14:20:47.056-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on jars (/Users/fkruege/.gradle/caches/jars-8).
+2021-04-16T14:20:47.079-0400 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache fileHashes.bin (/Users/fkruege/.gradle/caches/7.0/fileHashes/fileHashes.bin)
+2021-04-16T14:20:47.118-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on instrumented jar cache.
+2021-04-16T14:20:47.118-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on instrumented jar cache.
+2021-04-16T14:20:47.163-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on instrumented jar cache.
+2021-04-16T14:20:47.164-0400 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache file-access.bin (/Users/fkruege/.gradle/caches/journal-1/file-access.bin)
+2021-04-16T14:20:47.168-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:47.216-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for java-modules, path /Users/fkruege/.gradle/caches/7.0/fileContent/java-modules.bin, access org.gradle.cache.internal.DefaultCacheAccess@1be77a76
+2021-04-16T14:20:47.217-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/7.0/fileContent/java-modules.bin (max size: 49900)
+2021-04-16T14:20:47.217-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for file content cache (/Users/fkruege/.gradle/caches/7.0/fileContent)
+2021-04-16T14:20:47.217-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on file content cache (/Users/fkruege/.gradle/caches/7.0/fileContent).
+2021-04-16T14:20:47.217-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on file content cache (/Users/fkruege/.gradle/caches/7.0/fileContent).
+2021-04-16T14:20:47.372-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Resolve dependencies of classpath' started
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Resolve dependencies of classpath'
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Resolve dependencies of classpath' completed
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' to build'
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' to build' completed
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Run init scripts'
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run init scripts' completed
+2021-04-16T14:20:47.374-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Load build'
+2021-04-16T14:20:47.374-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load build' completed
+2021-04-16T14:20:47.378-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for artifact cache (/Users/fkruege/.gradle/caches/modules-2)
+2021-04-16T14:20:47.379-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/Users/fkruege/.gradle/caches/modules-2).
+2021-04-16T14:20:47.379-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on artifact cache (/Users/fkruege/.gradle/caches/modules-2).
+2021-04-16T14:20:47.381-0400 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1 completed (0 worker(s) in use)
+2021-04-16T14:20:47.381-0400 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] main: released lock on root.1
+2021-04-16T14:20:47.382-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.382-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] FAILURE: Build completed with 2 failures.
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 1: Task failed with an exception.
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] -----------
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * What went wrong:
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] java.lang.NullPointerException (no error message)
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Try:
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter]  Run with --scan to get full insights.
+2021-04-16T14:20:47.385-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.385-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Exception is:
+2021-04-16T14:20:47.385-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] java.lang.NullPointerException
+2021-04-16T14:20:47.385-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.profile.ProfileEventAdapter.beforeResolve(ProfileEventAdapter.java:129)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$ListenerDetails.dispatch(DefaultListenerManager.java:398)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$ListenerDetails.dispatch(DefaultListenerManager.java:380)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:61)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$EventBroadcast$ListenerDispatch.dispatch(DefaultListenerManager.java:368)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$EventBroadcast$ListenerDispatch.dispatch(DefaultListenerManager.java:355)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:43)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:245)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:157)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:141)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:37)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at com.sun.proxy.$Proxy46.beforeResolve(Unknown Source)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.performPreResolveActions(DefaultConfiguration.java:791)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.access$400(DefaultConfiguration.java:150)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$1.call(DefaultConfiguration.java:643)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$1.call(DefaultConfiguration.java:636)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:62)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveGraphIfRequired(DefaultConfiguration.java:636)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.lambda$resolveExclusively$4(DefaultConfiguration.java:616)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.initialization.RootScriptDomainObjectContext$CalculatedModelValueImpl.update(RootScriptDomainObjectContext.java:143)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveExclusively(DefaultConfiguration.java:613)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveToStateOrLater(DefaultConfiguration.java:600)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.access$1900(DefaultConfiguration.java:150)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$SelectedArtifactsProvider.getValue(DefaultConfiguration.java:1341)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$SelectedArtifactsProvider.getValue(DefaultConfiguration.java:1331)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationFileCollection.getSelectedArtifacts(DefaultConfiguration.java:1403)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationFileCollection.access$3500(DefaultConfiguration.java:1346)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationArtifactCollection.lambda$new$0(DefaultConfiguration.java:1970)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.model.CalculatedValueContainerFactory$SupplierBackedCalculator.calculateValue(CalculatedValueContainerFactory.java:78)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.model.CalculatedValueContainer$CalculationState.lambda$attachValue$0(CalculatedValueContainer.java:216)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.Try.ofFailable(Try.java:39)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.model.CalculatedValueContainer$CalculationState.attachValue(CalculatedValueContainer.java:211)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.model.CalculatedValueContainer.finalizeIfNotAlready(CalculatedValueContainer.java:184)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.model.CalculatedValueContainer.finalizeIfNotAlready(CalculatedValueContainer.java:175)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationArtifactCollection.ensureResolved(DefaultConfiguration.java:2012)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationArtifactCollection.getArtifacts(DefaultConfiguration.java:1989)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.composite.internal.CompositeBuildClassPathInitializer.execute(CompositeBuildClassPathInitializer.java:45)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.composite.internal.CompositeBuildClassPathInitializer.execute(CompositeBuildClassPathInitializer.java:32)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.initialization.DefaultScriptClassPathResolver.resolveClassPath(DefaultScriptClassPathResolver.java:40)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.initialization.DefaultScriptHandler.getNonInstrumentedScriptClassPath(DefaultScriptHandler.java:95)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.plugin.use.internal.DefaultPluginRequestApplicator.defineScriptHandlerClassScope(DefaultPluginRequestApplicator.java:161)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.plugin.use.internal.DefaultPluginRequestApplicator.applyPlugins(DefaultPluginRequestApplicator.java:78)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:117)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:65)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.BuildOperationScriptPlugin.lambda$apply$0(BuildOperationScriptPlugin.java:62)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.internal.DefaultUserCodeApplicationContext.apply(DefaultUserCodeApplicationContext.java:43)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:62)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.DefaultInitScriptProcessor.process(DefaultInitScriptProcessor.java:50)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.InitScriptHandler$1.run(InitScriptHandler.java:56)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.InitScriptHandler.executeScripts(InitScriptHandler.java:51)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultSettingsPreparer.prepareSettings(DefaultSettingsPreparer.java:33)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.BuildOperationFiringSettingsPreparer$LoadBuild.doLoadBuild(BuildOperationFiringSettingsPreparer.java:62)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.BuildOperationFiringSettingsPreparer$LoadBuild.run(BuildOperationFiringSettingsPreparer.java:57)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.BuildOperationFiringSettingsPreparer.prepareSettings(BuildOperationFiringSettingsPreparer.java:45)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.prepareSettings(DefaultGradleLauncher.java:219)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.doClassicBuildStages(DefaultGradleLauncher.java:160)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:125)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController$1.create(GradleBuildController.java:71)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:213)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:67)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:56)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:31)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:66)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:90)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:49)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:44)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:62)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:44)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.lambda$execute$0(InProcessBuildActionExecuter.java:59)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:86)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:58)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.lambda$execute$0(BuildTreeScopeLifecycleBuildActionExecuter.java:34)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:53)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:33)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:28)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:104)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:55)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:64)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:37)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.lambda$execute$0(SessionScopeLifecycleBuildActionExecuter.java:54)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:67)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:50)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:36)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:59)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:31)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:58)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:42)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:47)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:31)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:57)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:212)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:275)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:247)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:82)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:30)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:92)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:38)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:44)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:26)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:41)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:26)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$WithLogging.execute(DefaultCommandLineActionFactory.java:240)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.Main.doAction(Main.java:35)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:50)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:31)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] ==============================================================================
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 2: Task failed with an exception.
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] -----------
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * What went wrong:
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] java.lang.NullPointerException (no error message)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Try:
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter]  Run with --scan to get full insights.
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Exception is:
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] java.lang.NullPointerException
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.profile.ProfileEventAdapter.buildFinished(ProfileEventAdapter.java:79)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$ListenerDetails.dispatch(DefaultListenerManager.java:398)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$ListenerDetails.dispatch(DefaultListenerManager.java:380)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:61)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$EventBroadcast$ListenerDispatch.dispatch(DefaultListenerManager.java:368)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$EventBroadcast$ListenerDispatch.dispatch(DefaultListenerManager.java:355)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:43)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:245)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:157)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:61)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:346)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:249)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:141)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:37)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at com.sun.proxy.$Proxy19.buildFinished(Unknown Source)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.finishBuild(DefaultGradleLauncher.java:196)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:152)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:125)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController$1.create(GradleBuildController.java:71)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:213)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:67)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:56)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:31)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:66)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:90)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:49)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:44)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:62)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:44)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.lambda$execute$0(InProcessBuildActionExecuter.java:59)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:86)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:58)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.lambda$execute$0(BuildTreeScopeLifecycleBuildActionExecuter.java:34)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:53)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:33)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:28)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:104)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:55)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:64)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:37)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.lambda$execute$0(SessionScopeLifecycleBuildActionExecuter.java:54)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:67)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:50)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:36)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:59)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:31)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:58)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:42)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:47)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:31)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:57)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:212)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:275)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:247)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:82)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:30)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:92)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:38)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:44)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:26)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:41)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:26)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$WithLogging.execute(DefaultCommandLineActionFactory.java:240)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.Main.doAction(Main.java:35)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:50)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:31)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] ==============================================================================
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Get more help at https://help.gradle.org
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildResultLogger] 
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildResultLogger] BUILD FAILED in 3s
+2021-04-16T14:20:47.395-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build finished for file system watching' started
+2021-04-16T14:20:47.401-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected apfs: / from /dev/disk1s5 (remote: false, case-sensitive: false, case-preserving: true)
+2021-04-16T14:20:47.401-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected devfs: /dev from devfs (remote: false, case-sensitive: true, case-preserving: true)
+2021-04-16T14:20:47.402-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected apfs: /System/Volumes/Data from /dev/disk1s1 (remote: false, case-sensitive: false, case-preserving: true)
+2021-04-16T14:20:47.403-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected apfs: /private/var/vm from /dev/disk1s4 (remote: false, case-sensitive: false, case-preserving: true)
+2021-04-16T14:20:47.403-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected autofs: /System/Volumes/Data/home from map auto_home (remote: true, case-sensitive: true, case-preserving: true)
+2021-04-16T14:20:47.403-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected autofs: /System/Volumes/Data/Network/Servers from map -fstab (remote: true, case-sensitive: true, case-preserving: true)
+2021-04-16T14:20:47.403-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected apfs: /Volumes/Recovery from /dev/disk1s3 (remote: false, case-sensitive: false, case-preserving: true)
+2021-04-16T14:20:47.403-0400 [INFO] [org.gradle.internal.watch.registry.impl.WatchableHierarchies] Some of the file system contents retained in the virtual file system are on file systems that Gradle doesn't support watching. The relevant state was discarded to ensure changes to these locations are properly detected. You can override this by explicitly enabling file system watching.
+2021-04-16T14:20:47.403-0400 [INFO] [org.gradle.internal.watch.registry.impl.HierarchicalFileWatcherUpdater] Not watching anything anymore
+2021-04-16T14:20:47.403-0400 [INFO] [org.gradle.internal.watch.registry.impl.HierarchicalFileWatcherUpdater] Watched directory hierarchies: []
+2021-04-16T14:20:47.405-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Build finished for file system watching'
+2021-04-16T14:20:47.405-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build finished for file system watching' completed
+2021-04-16T14:20:47.405-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Run build'
+2021-04-16T14:20:47.405-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run build' completed
+2021-04-16T14:20:47.452-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for cache directory md-supplier (/Users/fkruege/.gradle/caches/7.0/md-supplier)
+2021-04-16T14:20:47.453-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cache directory md-supplier (/Users/fkruege/.gradle/caches/7.0/md-supplier).
+2021-04-16T14:20:47.468-0400 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] Configuration Cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/configuration-cache) has last been fully cleaned up 0 hours ago
+2021-04-16T14:20:47.468-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Configuration Cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/configuration-cache) was closed 0 times.
+2021-04-16T14:20:47.468-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for cache directory md-rule (/Users/fkruege/.gradle/caches/7.0/md-rule)
+2021-04-16T14:20:47.468-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cache directory md-rule (/Users/fkruege/.gradle/caches/7.0/md-rule).
+2021-04-16T14:20:47.469-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 0 resolution results binary files in 0.0 secs
+2021-04-16T14:20:47.471-0400 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopping 0 deployment handles
+2021-04-16T14:20:47.471-0400 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopped deployment handles
+2021-04-16T14:20:47.471-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes)
+2021-04-16T14:20:47.471-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes).
+2021-04-16T14:20:47.472-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for checksums cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums)
+2021-04-16T14:20:47.472-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on checksums cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums).
+2021-04-16T14:20:47.472-0400 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] VCS Checkout Cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/vcs-1) has last been fully cleaned up 0 hours ago
+2021-04-16T14:20:47.473-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache VCS Checkout Cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/vcs-1) was closed 0 times.
+2021-04-16T14:20:47.473-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache VCS metadata (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/vcsMetadata-1) was closed 0 times.
+2021-04-16T14:20:47.476-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for jars (/Users/fkruege/.gradle/caches/jars-8)
+2021-04-16T14:20:47.476-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on jars (/Users/fkruege/.gradle/caches/jars-8).
+2021-04-16T14:20:47.477-0400 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] jars (/Users/fkruege/.gradle/caches/jars-8) has last been fully cleaned up 14 hours ago
+2021-04-16T14:20:47.477-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file content cache (/Users/fkruege/.gradle/caches/7.0/fileContent)
+2021-04-16T14:20:47.478-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file content cache (/Users/fkruege/.gradle/caches/7.0/fileContent).
+2021-04-16T14:20:47.480-0400 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] Artifact transforms cache (/Users/fkruege/.gradle/caches/transforms-3) has last been fully cleaned up 3 hours ago
+2021-04-16T14:20:47.480-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Artifact transforms cache (/Users/fkruege/.gradle/caches/transforms-3) was closed 0 times.
+2021-04-16T14:20:47.480-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (/Users/fkruege/.gradle/caches/modules-2)
+2021-04-16T14:20:47.480-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/Users/fkruege/.gradle/caches/modules-2).
+2021-04-16T14:20:47.481-0400 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] artifact cache (/Users/fkruege/.gradle/caches/modules-2) has last been fully cleaned up 14 hours ago
+2021-04-16T14:20:47.481-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Generated Gradle JARs cache (/Users/fkruege/.gradle/caches/7.0/generated-gradle-jars) was closed 0 times.
+2021-04-16T14:20:47.481-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for journal cache (/Users/fkruege/.gradle/caches/journal-1)
+2021-04-16T14:20:47.481-0400 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache file-access.bin (/Users/fkruege/.gradle/caches/journal-1/file-access.bin)
+2021-04-16T14:20:47.482-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on journal cache (/Users/fkruege/.gradle/caches/journal-1).
+2021-04-16T14:20:47.482-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (/Users/fkruege/.gradle/caches/7.0/fileHashes)
+2021-04-16T14:20:47.483-0400 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/Users/fkruege/.gradle/caches/7.0/fileHashes/fileHashes.bin)
+2021-04-16T14:20:47.483-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (/Users/fkruege/.gradle/caches/7.0/fileHashes).
+2021-04-16T14:20:47.483-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for execution history cache (/Users/fkruege/.gradle/caches/7.0/executionHistory)
+2021-04-16T14:20:47.483-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on execution history cache (/Users/fkruege/.gradle/caches/7.0/executionHistory).
+2021-04-16T14:20:47.485-0400 [DEBUG] [org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler] File lock listener thread completed.
+2021-04-16T14:20:47.486-0400 [LIFECYCLE] [org.gradle.launcher.cli.DebugLoggerWarningAction] 
+#############################################################################
+   WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+
+   Debug level logging will leak security sensitive information!
+
+   https://docs.gradle.org/7.0/userguide/logging.html#sec:debug_security
+#############################################################################
+
+
+ERROR: failed to run build. See log file for details.
+
+
+* Stopping daemons
+Running command /Users/fkruege/.gradle/wrapper/dists/gradle-7.0-all/9m115ut5nwvtxli7nys8pggfr/gradle-7.0/bin/gradle --stop --gradle-user-home /Users/fkruege/.gradle
+No Gradle daemons are running.
+java.lang.RuntimeException: Build failed.
+	at org.gradle.profiler.CliGradleClient.runTasks(CliGradleClient.java:82)
+	at org.gradle.profiler.RunTasksAction.run(RunTasksAction.java:36)
+	at org.gradle.profiler.GradleInvokerBuildAction.run(GradleInvokerBuildAction.java:10)
+	at org.gradle.profiler.BuildUnderTestInvoker$InvokeAndMeasureAction.run(BuildUnderTestInvoker.java:59)
+	at org.gradle.profiler.BuildUnderTestInvoker$InvokeAndMeasureAction.run(BuildUnderTestInvoker.java:40)
+	at org.gradle.profiler.StopDaemonAfterAction.run(StopDaemonAfterAction.java:23)
+	at org.gradle.profiler.RunCleanupStepAction.run(RunCleanupStepAction.java:28)
+	at org.gradle.profiler.GradleScenarioInvoker.doRun(GradleScenarioInvoker.java:112)
+	at org.gradle.profiler.GradleScenarioInvoker.doRun(GradleScenarioInvoker.java:21)
+	at org.gradle.profiler.ScenarioInvoker.run(ScenarioInvoker.java:17)
+	at org.gradle.profiler.Main.invoke(Main.java:110)
+	at org.gradle.profiler.Main.run(Main.java:76)
+	at org.gradle.profiler.Main.main(Main.java:18)
+Caused by: java.lang.RuntimeException: Could not run command /Users/fkruege/.gradle/wrapper/dists/gradle-7.0-all/9m115ut5nwvtxli7nys8pggfr/gradle-7.0/bin/gradle --gradle-user-home /Users/fkruege/.gradle --profile --info --debug --stacktrace --scan -I /private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle clean -Dorg.gradle.daemon=false -Dorg.gradle.jvmargs
+Output:
+======
+2021-04-16T14:20:44.132-0400 [INFO] [org.gradle.internal.nativeintegration.services.NativeServices] Initialized native services in: /Users/fkruege/.gradle/native
+2021-04-16T14:20:44.210-0400 [LIFECYCLE] [org.gradle.launcher.cli.DebugLoggerWarningAction] 
+#############################################################################
+   WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+
+   Debug level logging will leak security sensitive information!
+
+   https://docs.gradle.org/7.0/userguide/logging.html#sec:debug_security
+#############################################################################
+
+2021-04-16T14:20:44.831-0400 [INFO] [org.gradle.internal.work.DefaultWorkerLeaseService] Using 12 worker leases.
+2021-04-16T14:20:44.952-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for resourceHashesCache, path /Users/fkruege/.gradle/caches/7.0/fileHashes/resourceHashesCache.bin, access org.gradle.cache.internal.DefaultCacheAccess@6ef81f31
+2021-04-16T14:20:44.961-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/7.0/fileHashes/resourceHashesCache.bin (max size: 998900)
+2021-04-16T14:20:44.962-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for file hash cache (/Users/fkruege/.gradle/caches/7.0/fileHashes)
+2021-04-16T14:20:44.975-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun1
+2021-04-16T14:20:44.975-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:e1a0:45a6:11d5:a02f%utun1
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun0
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:736:249f:e391:fa49%utun0
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface en5
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:aede:48ff:fe00:1122%en5
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface utun2
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fd4a:8b27:f779:0:0:0:0:10f%utun2
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:aede:48ff:fe00:1122%utun2
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /10.92.65.15
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface en8
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /fe80:0:0:0:1c24:3724:cb0c:58a0%en8
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /192.168.1.29
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo0
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Ignoring remote address on loopback interface /fe80:0:0:0:0:0:0:1%lo0
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /0:0:0:0:0:0:0:1%lo0
+2021-04-16T14:20:44.978-0400 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2021-04-16T14:20:44.989-0400 [DEBUG] [org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler] Starting file lock listener thread.
+2021-04-16T14:20:44.990-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on file hash cache (/Users/fkruege/.gradle/caches/7.0/fileHashes).
+2021-04-16T14:20:44.994-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on file hash cache (/Users/fkruege/.gradle/caches/7.0/fileHashes).
+2021-04-16T14:20:45.015-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for fileHashes, path /Users/fkruege/.gradle/caches/7.0/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@6ef81f31
+2021-04-16T14:20:45.015-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/7.0/fileHashes/fileHashes.bin (max size: 998900)
+2021-04-16T14:20:45.097-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for file-access, path /Users/fkruege/.gradle/caches/journal-1/file-access.bin, access org.gradle.cache.internal.DefaultCacheAccess@3701e6e4
+2021-04-16T14:20:45.097-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/journal-1/file-access.bin (max size: 24900)
+2021-04-16T14:20:45.097-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for journal cache (/Users/fkruege/.gradle/caches/journal-1)
+2021-04-16T14:20:45.097-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on journal cache (/Users/fkruege/.gradle/caches/journal-1).
+2021-04-16T14:20:45.098-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on journal cache (/Users/fkruege/.gradle/caches/journal-1).
+2021-04-16T14:20:45.455-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for fileHashes, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes/fileHashes.bin, access org.gradle.cache.internal.DefaultCacheAccess@593a6726
+2021-04-16T14:20:45.456-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes/fileHashes.bin (max size: 998900)
+2021-04-16T14:20:45.456-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for file hash cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes)
+2021-04-16T14:20:45.456-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on file hash cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes).
+2021-04-16T14:20:45.456-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on file hash cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes).
+2021-04-16T14:20:45.461-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for resourceHashesCache, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes/resourceHashesCache.bin, access org.gradle.cache.internal.DefaultCacheAccess@593a6726
+2021-04-16T14:20:45.462-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes/resourceHashesCache.bin (max size: 1997800)
+2021-04-16T14:20:45.497-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run build' started
+2021-04-16T14:20:45.500-0400 [INFO] [org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner] Watching the file system is enabled if available
+2021-04-16T14:20:45.502-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build started for file system watching' started
+2021-04-16T14:20:45.511-0400 [INFO] [org.gradle.internal.watch.registry.impl.WatchableHierarchies] Now considering [/Users/fkruege/workspace/ReproduceGradleProfilerNPE] as hierarchies to watch
+2021-04-16T14:20:45.515-0400 [INFO] [org.gradle.internal.watch.registry.impl.HierarchicalFileWatcherUpdater] Not watching anything anymore
+2021-04-16T14:20:45.519-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Build started for file system watching'
+2021-04-16T14:20:45.519-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build started for file system watching' completed
+2021-04-16T14:20:45.527-0400 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1 started (1 worker(s) in use).
+2021-04-16T14:20:45.527-0400 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] main: acquired lock on root.1
+2021-04-16T14:20:45.529-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load build' started
+2021-04-16T14:20:45.531-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run init scripts' started
+2021-04-16T14:20:45.583-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for workingDirs, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/vcsMetadata-1/workingDirs.bin, access org.gradle.cache.internal.DefaultCacheAccess@3127cb44
+2021-04-16T14:20:45.601-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for md5-checksums, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/md5-checksums.bin, access org.gradle.cache.internal.DefaultCacheAccess@40de8f93
+2021-04-16T14:20:45.602-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/md5-checksums.bin (max size: 2400)
+2021-04-16T14:20:45.602-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for checksums cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums)
+2021-04-16T14:20:45.602-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on checksums cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums).
+2021-04-16T14:20:45.602-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on checksums cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums).
+2021-04-16T14:20:45.602-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for sha1-checksums, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha1-checksums.bin, access org.gradle.cache.internal.DefaultCacheAccess@40de8f93
+2021-04-16T14:20:45.603-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha1-checksums.bin (max size: 2400)
+2021-04-16T14:20:45.603-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for sha256-checksums, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha256-checksums.bin, access org.gradle.cache.internal.DefaultCacheAccess@40de8f93
+2021-04-16T14:20:45.603-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha256-checksums.bin (max size: 2400)
+2021-04-16T14:20:45.603-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for sha512-checksums, path /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha512-checksums.bin, access org.gradle.cache.internal.DefaultCacheAccess@40de8f93
+2021-04-16T14:20:45.603-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums/sha512-checksums.bin (max size: 2400)
+2021-04-16T14:20:45.650-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for md-supplier, path /Users/fkruege/.gradle/caches/7.0/md-supplier/md-supplier.bin, access org.gradle.cache.internal.DefaultCacheAccess@2ed71727
+2021-04-16T14:20:45.651-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/7.0/md-supplier/md-supplier.bin (max size: 4900)
+2021-04-16T14:20:45.651-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for cache directory md-supplier (/Users/fkruege/.gradle/caches/7.0/md-supplier)
+2021-04-16T14:20:45.651-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cache directory md-supplier (/Users/fkruege/.gradle/caches/7.0/md-supplier).
+2021-04-16T14:20:45.652-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cache directory md-supplier (/Users/fkruege/.gradle/caches/7.0/md-supplier).
+2021-04-16T14:20:45.665-0400 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: /Users/fkruege/.m2/repository
+2021-04-16T14:20:45.758-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for md-rule, path /Users/fkruege/.gradle/caches/7.0/md-rule/md-rule.bin, access org.gradle.cache.internal.DefaultCacheAccess@5eabff6b
+2021-04-16T14:20:45.759-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/7.0/md-rule/md-rule.bin (max size: 4900)
+2021-04-16T14:20:45.759-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for cache directory md-rule (/Users/fkruege/.gradle/caches/7.0/md-rule)
+2021-04-16T14:20:45.759-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cache directory md-rule (/Users/fkruege/.gradle/caches/7.0/md-rule).
+2021-04-16T14:20:45.759-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cache directory md-rule (/Users/fkruege/.gradle/caches/7.0/md-rule).
+2021-04-16T14:20:45.828-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for executionHistory, path /Users/fkruege/.gradle/caches/7.0/executionHistory/executionHistory.bin, access org.gradle.cache.internal.DefaultCacheAccess@6b4125ed
+2021-04-16T14:20:45.829-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating cache /Users/fkruege/.gradle/caches/7.0/executionHistory/executionHistory.bin without in-memory store.
+2021-04-16T14:20:45.829-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for execution history cache (/Users/fkruege/.gradle/caches/7.0/executionHistory)
+2021-04-16T14:20:45.829-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on execution history cache (/Users/fkruege/.gradle/caches/7.0/executionHistory).
+2021-04-16T14:20:45.829-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on execution history cache (/Users/fkruege/.gradle/caches/7.0/executionHistory).
+2021-04-16T14:20:45.883-0400 [DEBUG] [org.gradle.internal.locking.LockFileReaderWriter] Lockfiles root: /Users/fkruege/workspace/ReproduceGradleProfilerNPE/gradle/dependency-locks
+2021-04-16T14:20:45.923-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' to build' started
+2021-04-16T14:20:45.939-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:45.939-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:45.940-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:45.940-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:45.941-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:45.943-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Compile initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (CLASSPATH)' started
+2021-04-16T14:20:45.963-0400 [INFO] [org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler] Compiling initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' using SubsetScriptTransformer.
+2021-04-16T14:20:47.040-0400 [DEBUG] [org.gradle.groovy.scripts.internal.DefaultScriptCompilationHandler] Timing: Writing script to cache at /Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t/cp_init took: 1.095 secs
+2021-04-16T14:20:47.040-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Compile initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (CLASSPATH)'
+2021-04-16T14:20:47.041-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Compile initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (CLASSPATH)' completed
+2021-04-16T14:20:47.051-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:47.051-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:47.052-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:47.055-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for jars (/Users/fkruege/.gradle/caches/jars-8)
+2021-04-16T14:20:47.056-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on jars (/Users/fkruege/.gradle/caches/jars-8).
+2021-04-16T14:20:47.056-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on jars (/Users/fkruege/.gradle/caches/jars-8).
+2021-04-16T14:20:47.079-0400 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache fileHashes.bin (/Users/fkruege/.gradle/caches/7.0/fileHashes/fileHashes.bin)
+2021-04-16T14:20:47.118-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on instrumented jar cache.
+2021-04-16T14:20:47.118-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on instrumented jar cache.
+2021-04-16T14:20:47.163-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on instrumented jar cache.
+2021-04-16T14:20:47.164-0400 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache file-access.bin (/Users/fkruege/.gradle/caches/journal-1/file-access.bin)
+2021-04-16T14:20:47.168-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cp_init generic class cache for initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' (/Users/fkruege/.gradle/caches/7.0/scripts/c9tdlap4lrjg2f0xaoizmxt3t).
+2021-04-16T14:20:47.216-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Creating new cache for java-modules, path /Users/fkruege/.gradle/caches/7.0/fileContent/java-modules.bin, access org.gradle.cache.internal.DefaultCacheAccess@1be77a76
+2021-04-16T14:20:47.217-0400 [DEBUG] [org.gradle.cache.internal.DefaultInMemoryCacheDecoratorFactory] Creating in-memory store for cache /Users/fkruege/.gradle/caches/7.0/fileContent/java-modules.bin (max size: 49900)
+2021-04-16T14:20:47.217-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for file content cache (/Users/fkruege/.gradle/caches/7.0/fileContent)
+2021-04-16T14:20:47.217-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on file content cache (/Users/fkruege/.gradle/caches/7.0/fileContent).
+2021-04-16T14:20:47.217-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on file content cache (/Users/fkruege/.gradle/caches/7.0/fileContent).
+2021-04-16T14:20:47.372-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Resolve dependencies of classpath' started
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Resolve dependencies of classpath'
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Resolve dependencies of classpath' completed
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Apply initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' to build'
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Apply initialization script '/private/var/folders/xm/05rhg59d4wv1fprp2d36vwc40000gn/T/gradleProfiler5300180737125482993.gradle' to build' completed
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Run init scripts'
+2021-04-16T14:20:47.373-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run init scripts' completed
+2021-04-16T14:20:47.374-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Load build'
+2021-04-16T14:20:47.374-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Load build' completed
+2021-04-16T14:20:47.378-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Acquiring file lock for artifact cache (/Users/fkruege/.gradle/caches/modules-2)
+2021-04-16T14:20:47.379-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/Users/fkruege/.gradle/caches/modules-2).
+2021-04-16T14:20:47.379-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on artifact cache (/Users/fkruege/.gradle/caches/modules-2).
+2021-04-16T14:20:47.381-0400 [DEBUG] [org.gradle.internal.work.DefaultWorkerLeaseService] Worker lease root.1 completed (0 worker(s) in use)
+2021-04-16T14:20:47.381-0400 [DEBUG] [org.gradle.internal.resources.AbstractTrackedResourceLock] main: released lock on root.1
+2021-04-16T14:20:47.382-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.382-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] FAILURE: Build completed with 2 failures.
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 1: Task failed with an exception.
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] -----------
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * What went wrong:
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] java.lang.NullPointerException (no error message)
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Try:
+2021-04-16T14:20:47.384-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter]  Run with --scan to get full insights.
+2021-04-16T14:20:47.385-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.385-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Exception is:
+2021-04-16T14:20:47.385-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] java.lang.NullPointerException
+2021-04-16T14:20:47.385-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.profile.ProfileEventAdapter.beforeResolve(ProfileEventAdapter.java:129)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$ListenerDetails.dispatch(DefaultListenerManager.java:398)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$ListenerDetails.dispatch(DefaultListenerManager.java:380)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:61)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$EventBroadcast$ListenerDispatch.dispatch(DefaultListenerManager.java:368)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$EventBroadcast$ListenerDispatch.dispatch(DefaultListenerManager.java:355)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:43)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:245)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:157)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:141)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:37)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at com.sun.proxy.$Proxy46.beforeResolve(Unknown Source)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.performPreResolveActions(DefaultConfiguration.java:791)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.access$400(DefaultConfiguration.java:150)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$1.call(DefaultConfiguration.java:643)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$1.call(DefaultConfiguration.java:636)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:62)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveGraphIfRequired(DefaultConfiguration.java:636)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.lambda$resolveExclusively$4(DefaultConfiguration.java:616)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.initialization.RootScriptDomainObjectContext$CalculatedModelValueImpl.update(RootScriptDomainObjectContext.java:143)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveExclusively(DefaultConfiguration.java:613)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.resolveToStateOrLater(DefaultConfiguration.java:600)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration.access$1900(DefaultConfiguration.java:150)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$SelectedArtifactsProvider.getValue(DefaultConfiguration.java:1341)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$SelectedArtifactsProvider.getValue(DefaultConfiguration.java:1331)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationFileCollection.getSelectedArtifacts(DefaultConfiguration.java:1403)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationFileCollection.access$3500(DefaultConfiguration.java:1346)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationArtifactCollection.lambda$new$0(DefaultConfiguration.java:1970)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.model.CalculatedValueContainerFactory$SupplierBackedCalculator.calculateValue(CalculatedValueContainerFactory.java:78)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.model.CalculatedValueContainer$CalculationState.lambda$attachValue$0(CalculatedValueContainer.java:216)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.Try.ofFailable(Try.java:39)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.model.CalculatedValueContainer$CalculationState.attachValue(CalculatedValueContainer.java:211)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.model.CalculatedValueContainer.finalizeIfNotAlready(CalculatedValueContainer.java:184)
+2021-04-16T14:20:47.386-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.model.CalculatedValueContainer.finalizeIfNotAlready(CalculatedValueContainer.java:175)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationArtifactCollection.ensureResolved(DefaultConfiguration.java:2012)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.artifacts.configurations.DefaultConfiguration$ConfigurationArtifactCollection.getArtifacts(DefaultConfiguration.java:1989)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.composite.internal.CompositeBuildClassPathInitializer.execute(CompositeBuildClassPathInitializer.java:45)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.composite.internal.CompositeBuildClassPathInitializer.execute(CompositeBuildClassPathInitializer.java:32)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.initialization.DefaultScriptClassPathResolver.resolveClassPath(DefaultScriptClassPathResolver.java:40)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.api.internal.initialization.DefaultScriptHandler.getNonInstrumentedScriptClassPath(DefaultScriptHandler.java:95)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.plugin.use.internal.DefaultPluginRequestApplicator.defineScriptHandlerClassScope(DefaultPluginRequestApplicator.java:161)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.plugin.use.internal.DefaultPluginRequestApplicator.applyPlugins(DefaultPluginRequestApplicator.java:78)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.DefaultScriptPluginFactory$ScriptPluginImpl.apply(DefaultScriptPluginFactory.java:117)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.BuildOperationScriptPlugin$1.run(BuildOperationScriptPlugin.java:65)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.BuildOperationScriptPlugin.lambda$apply$0(BuildOperationScriptPlugin.java:62)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.internal.DefaultUserCodeApplicationContext.apply(DefaultUserCodeApplicationContext.java:43)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.BuildOperationScriptPlugin.apply(BuildOperationScriptPlugin.java:62)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.configuration.DefaultInitScriptProcessor.process(DefaultInitScriptProcessor.java:50)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.InitScriptHandler$1.run(InitScriptHandler.java:56)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.InitScriptHandler.executeScripts(InitScriptHandler.java:51)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultSettingsPreparer.prepareSettings(DefaultSettingsPreparer.java:33)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.BuildOperationFiringSettingsPreparer$LoadBuild.doLoadBuild(BuildOperationFiringSettingsPreparer.java:62)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.BuildOperationFiringSettingsPreparer$LoadBuild.run(BuildOperationFiringSettingsPreparer.java:57)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:29)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$1.execute(DefaultBuildOperationRunner.java:26)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.387-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.run(DefaultBuildOperationRunner.java:56)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$run$1(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.runWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:45)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.run(DefaultBuildOperationExecutor.java:71)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.BuildOperationFiringSettingsPreparer.prepareSettings(BuildOperationFiringSettingsPreparer.java:45)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.prepareSettings(DefaultGradleLauncher.java:219)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.doClassicBuildStages(DefaultGradleLauncher.java:160)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:149)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:125)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController$1.create(GradleBuildController.java:71)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:213)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:67)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:56)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:31)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:66)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:90)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:49)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:44)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:62)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:44)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.lambda$execute$0(InProcessBuildActionExecuter.java:59)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:86)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:58)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.lambda$execute$0(BuildTreeScopeLifecycleBuildActionExecuter.java:34)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:53)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:33)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:28)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:104)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:55)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:64)
+2021-04-16T14:20:47.388-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:37)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.lambda$execute$0(SessionScopeLifecycleBuildActionExecuter.java:54)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:67)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:50)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:36)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:59)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:31)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:58)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:42)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:47)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:31)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:57)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:212)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:275)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:247)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:82)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:30)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:92)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:38)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:44)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:26)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:41)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:26)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$WithLogging.execute(DefaultCommandLineActionFactory.java:240)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.Main.doAction(Main.java:35)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:50)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:31)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] ==============================================================================
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 2: Task failed with an exception.
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] -----------
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * What went wrong:
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] java.lang.NullPointerException (no error message)
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Try:
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter]  Run with --scan to get full insights.
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.389-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Exception is:
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] java.lang.NullPointerException
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.profile.ProfileEventAdapter.buildFinished(ProfileEventAdapter.java:79)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$ListenerDetails.dispatch(DefaultListenerManager.java:398)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$ListenerDetails.dispatch(DefaultListenerManager.java:380)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:61)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$EventBroadcast$ListenerDispatch.dispatch(DefaultListenerManager.java:368)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.DefaultListenerManager$EventBroadcast$ListenerDispatch.dispatch(DefaultListenerManager.java:355)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:43)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:245)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$SingletonDispatch.dispatch(BroadcastDispatch.java:157)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.AbstractBroadcastDispatch.dispatch(AbstractBroadcastDispatch.java:61)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:346)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.BroadcastDispatch$CompositeDispatch.dispatch(BroadcastDispatch.java:249)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:141)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.event.ListenerBroadcast.dispatch(ListenerBroadcast.java:37)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at com.sun.proxy.$Proxy19.buildFinished(Unknown Source)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.finishBuild(DefaultGradleLauncher.java:196)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.doBuildStages(DefaultGradleLauncher.java:152)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.initialization.DefaultGradleLauncher.executeTasks(DefaultGradleLauncher.java:125)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController$1.create(GradleBuildController.java:71)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.work.DefaultWorkerLeaseService.withLocks(DefaultWorkerLeaseService.java:213)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController.doBuild(GradleBuildController.java:67)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.invocation.GradleBuildController.run(GradleBuildController.java:56)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ExecuteBuildActionRunner.run(ExecuteBuildActionRunner.java:31)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.ChainingBuildActionRunner.run(ChainingBuildActionRunner.java:35)
+2021-04-16T14:20:47.390-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildOutcomeReportingBuildActionRunner.run(BuildOutcomeReportingBuildActionRunner.java:66)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ValidatingBuildActionRunner.run(ValidatingBuildActionRunner.java:32)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.FileSystemWatchingBuildActionRunner.run(FileSystemWatchingBuildActionRunner.java:90)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildCompletionNotifyingBuildActionRunner.run(BuildCompletionNotifyingBuildActionRunner.java:41)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:49)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner$3.call(RunAsBuildOperationBuildActionRunner.java:44)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:200)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$CallableBuildOperationWorker.execute(DefaultBuildOperationRunner.java:195)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:75)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner$3.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:153)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.execute(DefaultBuildOperationRunner.java:68)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationRunner.call(DefaultBuildOperationRunner.java:62)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.lambda$call$2(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.UnmanagedBuildOperationWrapper.callWithUnmanagedSupport(UnmanagedBuildOperationWrapper.java:54)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.operations.DefaultBuildOperationExecutor.call(DefaultBuildOperationExecutor.java:76)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.RunAsBuildOperationBuildActionRunner.run(RunAsBuildOperationBuildActionRunner.java:44)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.lambda$execute$0(InProcessBuildActionExecuter.java:59)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.composite.internal.DefaultRootBuildState.run(DefaultRootBuildState.java:86)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:58)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.InProcessBuildActionExecuter.execute(InProcessBuildActionExecuter.java:30)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.lambda$execute$0(BuildTreeScopeLifecycleBuildActionExecuter.java:34)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.buildtree.BuildTreeState.run(BuildTreeState.java:53)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:33)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.exec.BuildTreeScopeLifecycleBuildActionExecuter.execute(BuildTreeScopeLifecycleBuildActionExecuter.java:28)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:104)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.ContinuousBuildActionExecuter.execute(ContinuousBuildActionExecuter.java:55)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:64)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SubscribableBuildActionExecuter.execute(SubscribableBuildActionExecuter.java:37)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.lambda$execute$0(SessionScopeLifecycleBuildActionExecuter.java:54)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.session.BuildSessionState.run(BuildSessionState.java:67)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:50)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionScopeLifecycleBuildActionExecuter.execute(SessionScopeLifecycleBuildActionExecuter.java:36)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:36)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.GradleThreadBuildActionExecuter.execute(GradleThreadBuildActionExecuter.java:25)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:59)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.StartParamsValidatingActionExecuter.execute(StartParamsValidatingActionExecuter.java:31)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:58)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SessionFailureReportingActionExecuter.execute(SessionFailureReportingActionExecuter.java:42)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:47)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.tooling.internal.provider.SetupLoggingActionExecuter.execute(SetupLoggingActionExecuter.java:31)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.RunBuildAction.run(RunBuildAction.java:57)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.internal.Actions$RunnableActionAdapter.execute(Actions.java:212)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:275)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$ParseAndBuildAction.execute(DefaultCommandLineActionFactory.java:247)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:82)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DebugLoggerWarningAction.execute(DebugLoggerWarningAction.java:30)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:92)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.WelcomeMessageAction.execute(WelcomeMessageAction.java:38)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:44)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.NativeServicesInitializingAction.execute(NativeServicesInitializingAction.java:26)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:41)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.ExceptionReportingAction.execute(ExceptionReportingAction.java:26)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.cli.DefaultCommandLineActionFactory$WithLogging.execute(DefaultCommandLineActionFactory.java:240)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.Main.doAction(Main.java:35)
+2021-04-16T14:20:47.391-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.EntryPoint.run(EntryPoint.java:50)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.runNoExit(ProcessBootstrap.java:60)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.bootstrap.ProcessBootstrap.run(ProcessBootstrap.java:37)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 	at org.gradle.launcher.GradleMain.main(GradleMain.java:31)
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] ==============================================================================
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] 
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildExceptionReporter] * Get more help at https://help.gradle.org
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildResultLogger] 
+2021-04-16T14:20:47.392-0400 [ERROR] [org.gradle.internal.buildevents.BuildResultLogger] BUILD FAILED in 3s
+2021-04-16T14:20:47.395-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build finished for file system watching' started
+2021-04-16T14:20:47.401-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected apfs: / from /dev/disk1s5 (remote: false, case-sensitive: false, case-preserving: true)
+2021-04-16T14:20:47.401-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected devfs: /dev from devfs (remote: false, case-sensitive: true, case-preserving: true)
+2021-04-16T14:20:47.402-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected apfs: /System/Volumes/Data from /dev/disk1s1 (remote: false, case-sensitive: false, case-preserving: true)
+2021-04-16T14:20:47.403-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected apfs: /private/var/vm from /dev/disk1s4 (remote: false, case-sensitive: false, case-preserving: true)
+2021-04-16T14:20:47.403-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected autofs: /System/Volumes/Data/home from map auto_home (remote: true, case-sensitive: true, case-preserving: true)
+2021-04-16T14:20:47.403-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected autofs: /System/Volumes/Data/Network/Servers from map -fstab (remote: true, case-sensitive: true, case-preserving: true)
+2021-04-16T14:20:47.403-0400 [DEBUG] [org.gradle.internal.watch.vfs.impl.DefaultWatchableFileSystemDetector] Detected apfs: /Volumes/Recovery from /dev/disk1s3 (remote: false, case-sensitive: false, case-preserving: true)
+2021-04-16T14:20:47.403-0400 [INFO] [org.gradle.internal.watch.registry.impl.WatchableHierarchies] Some of the file system contents retained in the virtual file system are on file systems that Gradle doesn't support watching. The relevant state was discarded to ensure changes to these locations are properly detected. You can override this by explicitly enabling file system watching.
+2021-04-16T14:20:47.403-0400 [INFO] [org.gradle.internal.watch.registry.impl.HierarchicalFileWatcherUpdater] Not watching anything anymore
+2021-04-16T14:20:47.403-0400 [INFO] [org.gradle.internal.watch.registry.impl.HierarchicalFileWatcherUpdater] Watched directory hierarchies: []
+2021-04-16T14:20:47.405-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Build finished for file system watching'
+2021-04-16T14:20:47.405-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Build finished for file system watching' completed
+2021-04-16T14:20:47.405-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Completing Build operation 'Run build'
+2021-04-16T14:20:47.405-0400 [DEBUG] [org.gradle.internal.operations.DefaultBuildOperationRunner] Build operation 'Run build' completed
+2021-04-16T14:20:47.452-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for cache directory md-supplier (/Users/fkruege/.gradle/caches/7.0/md-supplier)
+2021-04-16T14:20:47.453-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cache directory md-supplier (/Users/fkruege/.gradle/caches/7.0/md-supplier).
+2021-04-16T14:20:47.468-0400 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] Configuration Cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/configuration-cache) has last been fully cleaned up 0 hours ago
+2021-04-16T14:20:47.468-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Configuration Cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/configuration-cache) was closed 0 times.
+2021-04-16T14:20:47.468-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for cache directory md-rule (/Users/fkruege/.gradle/caches/7.0/md-rule)
+2021-04-16T14:20:47.468-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cache directory md-rule (/Users/fkruege/.gradle/caches/7.0/md-rule).
+2021-04-16T14:20:47.469-0400 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 0 resolution results binary files in 0.0 secs
+2021-04-16T14:20:47.471-0400 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopping 0 deployment handles
+2021-04-16T14:20:47.471-0400 [DEBUG] [org.gradle.deployment.internal.DefaultDeploymentRegistry] Stopped deployment handles
+2021-04-16T14:20:47.471-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes)
+2021-04-16T14:20:47.471-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/fileHashes).
+2021-04-16T14:20:47.472-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for checksums cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums)
+2021-04-16T14:20:47.472-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on checksums cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/checksums).
+2021-04-16T14:20:47.472-0400 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] VCS Checkout Cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/vcs-1) has last been fully cleaned up 0 hours ago
+2021-04-16T14:20:47.473-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache VCS Checkout Cache (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/vcs-1) was closed 0 times.
+2021-04-16T14:20:47.473-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache VCS metadata (/Users/fkruege/workspace/ReproduceGradleProfilerNPE/.gradle/7.0/vcsMetadata-1) was closed 0 times.
+2021-04-16T14:20:47.476-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for jars (/Users/fkruege/.gradle/caches/jars-8)
+2021-04-16T14:20:47.476-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on jars (/Users/fkruege/.gradle/caches/jars-8).
+2021-04-16T14:20:47.477-0400 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] jars (/Users/fkruege/.gradle/caches/jars-8) has last been fully cleaned up 14 hours ago
+2021-04-16T14:20:47.477-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file content cache (/Users/fkruege/.gradle/caches/7.0/fileContent)
+2021-04-16T14:20:47.478-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file content cache (/Users/fkruege/.gradle/caches/7.0/fileContent).
+2021-04-16T14:20:47.480-0400 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] Artifact transforms cache (/Users/fkruege/.gradle/caches/transforms-3) has last been fully cleaned up 3 hours ago
+2021-04-16T14:20:47.480-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Artifact transforms cache (/Users/fkruege/.gradle/caches/transforms-3) was closed 0 times.
+2021-04-16T14:20:47.480-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (/Users/fkruege/.gradle/caches/modules-2)
+2021-04-16T14:20:47.480-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/Users/fkruege/.gradle/caches/modules-2).
+2021-04-16T14:20:47.481-0400 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] artifact cache (/Users/fkruege/.gradle/caches/modules-2) has last been fully cleaned up 14 hours ago
+2021-04-16T14:20:47.481-0400 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Generated Gradle JARs cache (/Users/fkruege/.gradle/caches/7.0/generated-gradle-jars) was closed 0 times.
+2021-04-16T14:20:47.481-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for journal cache (/Users/fkruege/.gradle/caches/journal-1)
+2021-04-16T14:20:47.481-0400 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache file-access.bin (/Users/fkruege/.gradle/caches/journal-1/file-access.bin)
+2021-04-16T14:20:47.482-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on journal cache (/Users/fkruege/.gradle/caches/journal-1).
+2021-04-16T14:20:47.482-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (/Users/fkruege/.gradle/caches/7.0/fileHashes)
+2021-04-16T14:20:47.483-0400 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/Users/fkruege/.gradle/caches/7.0/fileHashes/fileHashes.bin)
+2021-04-16T14:20:47.483-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (/Users/fkruege/.gradle/caches/7.0/fileHashes).
+2021-04-16T14:20:47.483-0400 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for execution history cache (/Users/fkruege/.gradle/caches/7.0/executionHistory)
+2021-04-16T14:20:47.483-0400 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on execution history cache (/Users/fkruege/.gradle/caches/7.0/executionHistory).
+2021-04-16T14:20:47.485-0400 [DEBUG] [org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler] File lock listener thread completed.
+2021-04-16T14:20:47.486-0400 [LIFECYCLE] [org.gradle.launcher.cli.DebugLoggerWarningAction] 
+#############################################################################
+   WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+
+   Debug level logging will leak security sensitive information!
+
+   https://docs.gradle.org/7.0/userguide/logging.html#sec:debug_security
+#############################################################################
+
+======
+	at org.gradle.profiler.CommandExec$RunHandle.waitForSuccess(CommandExec.java:204)
+	at org.gradle.profiler.CommandExec.run(CommandExec.java:83)
+	at org.gradle.profiler.CliGradleClient.runTasks(CliGradleClient.java:74)
+	... 12 more
+
+* Results written to /Users/fkruege/workspace/ReproduceGradleProfilerNPE/profile-out-2
+  /Users/fkruege/workspace/ReproduceGradleProfilerNPE/profile-out-2/benchmark.csv
+  /Users/fkruege/workspace/ReproduceGradleProfilerNPE/profile-out-2/benchmark.html
+
